@@ -1,16 +1,17 @@
+import Catalog from "./Catalog/Catalog";
+import Filter from "./Filter/Filter";
+import Footer from "./Footer/Footer";
+import Header from "./Header/Header";
+import Services from "./Services/Services";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+    <Header/>
+    {/* <Services/> */}
+    <Filter/>
+    <Catalog/>
+    <Footer/>
+    </>
   );
 };
