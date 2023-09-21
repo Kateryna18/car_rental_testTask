@@ -4,19 +4,16 @@ import {
     fetchingSuccess,
     fetchingError,
   } from "./advertsSlice";
+import { useSelector } from "react-redux";
 
 axios.defaults.baseURL = "https://6509a698f6553137159bcedd.mockapi.io";
 
-const fetchAdverts = () => async dispatch => {
+export const fetchAdverts = (page) => async dispatch => {
     try {
-        // Індикатор завантаження
         dispatch(fetchingInProgress());
-        // HTTP-запит
-        const response = await axios.get("/tasks");
-        // Обробка даних
+        const response = await axios.get(`/advert?page=${page}&limit=8`);
         dispatch(fetchingSuccess(response.data));
       } catch (e) {
-        // Обробка помилки
         dispatch(fetchingError(e.message));
       }
   };

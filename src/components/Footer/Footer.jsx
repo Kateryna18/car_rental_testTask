@@ -4,6 +4,7 @@ import css from './Footer.module.css';
 export default function Footer() {
   return (
     <footer className={css.footer}>
+      <div className={css.container}>
       <a className={css.logo}>Rental Car</a>
       <ul className={css.infoList}>
         <li className={css.infoItem}>
@@ -36,6 +37,7 @@ export default function Footer() {
           <a className={css.socialsLogo} href=""></a>SOC
         </li>
       </ul>
+      </div>
     </footer>
   );
 }

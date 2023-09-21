@@ -8,18 +8,18 @@ const advertsSlice = createSlice({
     fetchingInProgress(state) {
       state.isLoading = true;
     },
-    fetchingSuccess() {
+    fetchingSuccess(state, action) {
       state.isLoading = false;
       state.error = null;
-      state.adverts = action.payload;
+      state.adverts = state.adverts.concat(action.payload);
     },
-    fetchingError() {
+    fetchingError(state, action) {
       state.isLoading = false;
       state.error = action.payload;
     },
   },
 });
 
-const { getAdverts } = tasksSlice.actions;
+export const { fetchingInProgress, fetchingSuccess, fetchingError } = advertsSlice.actions;
 
-const tasksReducer = tasksSlice.reducer;
+export const advertReducer = advertsSlice.reducer;
