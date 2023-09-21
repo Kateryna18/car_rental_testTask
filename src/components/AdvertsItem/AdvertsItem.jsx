@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import css from './AdvertsItem.module.css';
 import icons from '../../images/icons.svg';
+import Modal from 'components/Modal/Modal';
 
 export default function AdvertsItem({ advert }) {
+  const [isFavorite, setIsFavorite] = useState(false);
+  const [isOpenModal, setIsOpenModal] = useState(false);
   const {
     img,
     make,
@@ -28,13 +31,27 @@ export default function AdvertsItem({ advert }) {
     .splice(0, 2)
     .join(' ');
 
+
+  const toggleToFavorite = () => {
+    setIsFavorite(!isFavorite)
+  }
+
+  const openModal = () => {
+    setIsOpenModal(true)
+  }
+
   return (
+    <>
     <li className={css.item}>
       <div className={css.boxImg}>
         <img src={img} alt={make} stroke={'#3470FF'} className={css.img} />
-        <svg width={18} height={18} className={css.icon}>
-          <use href={`${icons}#normal`}></use>
-        </svg>
+          <svg width={18} height={18} className={css.icon} onClick={toggleToFavorite}>
+            {isFavorite ? (
+              <use href={`${icons}#active`}></use>
+            ) : (
+              <use href={`${icons}#normal`}></use>
+            )}
+          </svg>
       </div>
       <div className={css.mainInfoBox}>
         <h2 className={css.tittleCard}>
@@ -53,9 +70,11 @@ export default function AdvertsItem({ advert }) {
         <span> {mileage} |</span>
         <span> {newFunctionalities}</span>
       </div>
-      <button type="submit" className={css.button}>
+      <button type="submit" className={css.button} onClick={openModal}>
         Learn more
       </button>
     </li>
+    {isOpenModal && <Modal active={isOpenModal} setActive={setIsOpenModal} carDetail={advert}/>}
+    </>
   );
 }
