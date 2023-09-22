@@ -7,11 +7,16 @@ import { fetchAdverts } from 'redux/operations';
 
 export default function CatalogPage() {
   const [page, setPage] = useState(1);
+  const [initialLoad, setInitialLoad] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(fetchAdverts(page))
-  }, [dispatch, page])
+    if (!initialLoad) {
+      dispatch(fetchAdverts(page));
+      setInitialLoad(true); 
+    }
+
+  }, [dispatch, initialLoad, page])
 
   return (
     <>

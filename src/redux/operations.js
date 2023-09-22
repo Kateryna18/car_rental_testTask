@@ -4,7 +4,6 @@ import {
     fetchingSuccess,
     fetchingError,
   } from "./advertsSlice";
-import { useSelector } from "react-redux";
 
 axios.defaults.baseURL = "https://6509a698f6553137159bcedd.mockapi.io";
 

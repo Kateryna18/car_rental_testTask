@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import css from './AdvertsItem.module.css';
 import icons from '../../images/icons.svg';
 import Modal from 'components/Modal/Modal';
@@ -7,6 +7,7 @@ export default function AdvertsItem({ advert }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isOpenModal, setIsOpenModal] = useState(false);
   const {
+    id,
     img,
     make,
     model,
@@ -18,6 +19,13 @@ export default function AdvertsItem({ advert }) {
     functionalities,
     address,
   } = advert;
+
+  useEffect(() => {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    if (favorites.some((fav) => fav.id === id)) {
+      setIsFavorite(true);
+    }
+  }, [id]);
 
   const newAdress = address.split(' ');
 
@@ -32,8 +40,15 @@ export default function AdvertsItem({ advert }) {
     .join(' ');
 
   const toggleToFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+    if (isFavorite) {
+      const updatedFavorites = favorites.filter((fav) => fav.id !== id);
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    } else {
+      favorites.push(advert);
+      localStorage.setItem('favorites', JSON.stringify(favorites));
+    }
     setIsFavorite(!isFavorite);
-    
   };
 
   const openModal = () => {
