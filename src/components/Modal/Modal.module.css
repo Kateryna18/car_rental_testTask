@@ -1,28 +1,53 @@
 .modal {
-  height: 100vw;
-  width: 100vw;
-  background-color: rgba(18, 20, 23, 0.5);
   position: fixed;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
+  /* padding-top: 20px;
+  padding-bottom: 40px; */
   z-index: 100;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: rgba(18, 20, 23, 0.5);
 }
 
 .modalContent {
+  box-sizing: border-box;
+  position: relative;
   padding: 40px;
   border-radius: 12px;
   background-color: #ffffff;
   width: 541px;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.icon {
+  position: absolute;
+  z-index: 110;
+  top: 16px;
+  right: 16px;
+
+  fill: #121417;
+  cursor: pointer;
+}
+
+.thumb {
+  width: 100%;
+  height: 248px;
+  margin-bottom: 14px;
 }
 
 .img {
+  display: block;
+  height: 100%;
   width: 100%;
   border-radius: 14px;
-  margin-bottom: 14px;
+  object-fit: cover;
 }
 
 .tittleCard {
@@ -39,6 +64,7 @@
 }
 
 .infoBox {
+  width: 277px;
   margin-bottom: 14px;
 
   font-size: 12px;
@@ -46,7 +72,18 @@
   color: rgba(18, 20, 23, 0.5);
 }
 
+.accessories {
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.functionalities {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
 .description {
+  width: 100%;
   margin-bottom: 24px;
 
   color: #121417;
@@ -67,6 +104,8 @@
 .boxCondition {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
 .condition {
@@ -87,4 +126,24 @@
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: -0.24px;
+}
+
+.linkTel {
+  display: block;
+  width: 168px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #3470ff;
+
+  color: #ffffff;
+  /* font-family: Manrope; */
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43; /* 142.857% */
+}
+
+.linkTel:hover, .linkTel:focus {
+  background-color: #0B44CD;;
 }
