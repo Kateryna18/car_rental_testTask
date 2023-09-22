@@ -32,7 +32,7 @@ export default function Services() {
                   <img className={css.img} src={carRedemptionImg} alt="Оренда авто з правом викупу" />
                 </div>
                 <div className={css.content}>
-                  <h2 className={css.itemTitle}>Оренда авто з правом викупу</h2>
+                  <h2 className={css.itemTitle}>Оренда з правом викупу</h2>
                 </div>
               </a>
             </li>
@@ -56,7 +56,7 @@ export default function Services() {
                   />
                 </div>
                 <div className={css.content}>
-                  <h2 className={css.itemTitle}>Оренда авто з виїздом за кордон</h2>
+                  <h2 className={css.itemTitle}>Авто з виїздом за кордон</h2>
                 </div>
               </a>
             </li>

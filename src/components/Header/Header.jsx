@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header className={css.header}>
         <div className={css.container}>
-          <a className={css.logo}>Rental Car</a>
+          <Link to="/" className={css.logo}>Rental Car</Link>
           <nav className={css.list}>
             <Link to="/" className={css.link}>Головна</Link>
             <Link to="/catalog" className={css.link}>Каталог авто</Link>
