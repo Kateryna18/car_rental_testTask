@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import css from './CatalogPage.module.css';
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import Catalog from "../components/AdvertsList/AdvertsList";
 import Filter from "../components/Filter/Filter";
 import { fetchAdverts } from 'redux/operations';

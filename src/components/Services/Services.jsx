@@ -13,7 +13,7 @@ export default function Services() {
       <h1 className={css.tittle}>Наші послуги</h1>
       <ul className={css.list}>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -27,7 +27,7 @@ export default function Services() {
               </a>
             </li>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={carRedemptionImg} alt="Оренда авто з правом викупу" />
                 </div>
@@ -37,7 +37,7 @@ export default function Services() {
               </a>
             </li>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={truckImg} alt="Вантажне авто" />
                 </div>
@@ -47,7 +47,7 @@ export default function Services() {
               </a>
             </li>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -61,7 +61,7 @@ export default function Services() {
               </a>
             </li>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -75,7 +75,7 @@ export default function Services() {
               </a>
             </li>
             <li className={css.item}>
-              <a href="" className={css.link}>
+              <a href="#" className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={myCarImg} alt='Чоловік за кермом авто'/>
                 </div>

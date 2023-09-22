@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import css from './AdvertsList.module.css';
 import AdvertsItem from 'components/AdvertsItem/AdvertsItem';
 
