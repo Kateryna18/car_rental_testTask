@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/car_rental_testTask/static/css/main.7acaea2f.css",
-    "main.js": "/car_rental_testTask/static/js/main.07d3183d.js",
+    "main.css": "/car_rental_testTask/static/css/main.bb49619b.css",
+    "main.js": "/car_rental_testTask/static/js/main.90f7b1b8.js",
+    "static/media/carSell.jpg": "/car_rental_testTask/static/media/carSell.3de50b702d0e3b26e5de.jpg",
+    "static/media/carAbroad.png": "/car_rental_testTask/static/media/carAbroad.bf646d22ba82c1addeb0.png",
+    "static/media/carHelp.jpg": "/car_rental_testTask/static/media/carHelp.3faefb85aa0236c11121.jpg",
+    "static/media/carDay.avif": "/car_rental_testTask/static/media/carDay.eb5657276ac05ea14c94.avif",
+    "static/media/myCar.avif": "/car_rental_testTask/static/media/myCar.b5d9b45ebf59b9bdc53a.avif",
+    "static/media/icons.svg": "/car_rental_testTask/static/media/icons.04408fc4c3747e3224e21fb5d0100da2.svg",
     "index.html": "/car_rental_testTask/index.html",
-    "main.7acaea2f.css.map": "/car_rental_testTask/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/car_rental_testTask/static/js/main.07d3183d.js.map"
+    "main.bb49619b.css.map": "/car_rental_testTask/static/css/main.bb49619b.css.map",
+    "main.90f7b1b8.js.map": "/car_rental_testTask/static/js/main.90f7b1b8.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.bb49619b.css",
+    "static/js/main.90f7b1b8.js"
   ]
 }
