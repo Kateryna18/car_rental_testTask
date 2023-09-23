@@ -16,6 +16,8 @@
 
 .link {
   display: block;
+  border: none;
+  background-color: transparent;
   transition: var(--shadow-transition);
 }
 
@@ -42,7 +44,7 @@
 }
 
 .content {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
@@ -53,7 +55,7 @@
   margin-bottom: 4px;
   text-align: center;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: black;

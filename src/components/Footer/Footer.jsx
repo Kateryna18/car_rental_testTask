@@ -30,21 +30,21 @@ export default function Footer() {
         </ul>
         <ul className={css.socialsList}>
           <li className={css.socialsItem}>
-            <a className={css.socialsLogo} href="https://uk-ua.facebook.com/" target="_blank">
+            <a className={css.socialsLogo} href="https://uk-ua.facebook.com/" target="_blank" rel="noreferrer noopener">
               <svg width={24} height={24} className={css.icon}>
                 <use href={`${icons}#facebook`}></use>
               </svg>
             </a>
           </li>
           <li className={css.socialsItem}>
-            <a className={css.socialsLogo} href="https://www.instagram.com/" target="_blank">
+            <a className={css.socialsLogo} href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
               <svg width={24} height={24} className={css.icon}>
                 <use href={`${icons}#instagram`}></use>
               </svg>
             </a>
           </li>
           <li className={css.socialsItem}>
-            <a className={css.socialsLogo} href="https://twitter.com/?lang=ru" target="_blank">
+            <a className={css.socialsLogo} href="https://twitter.com/?lang=ru" target="_blank" rel="noreferrer noopener">
               <svg width={24} height={24} className={css.icon}>
                 <use href={`${icons}#twitter`}></use>
               </svg>

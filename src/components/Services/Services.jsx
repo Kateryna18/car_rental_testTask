@@ -13,7 +13,7 @@ export default function Services() {
       <h1 className={css.tittle}>Наші послуги</h1>
       <ul className={css.list}>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button  className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -24,30 +24,30 @@ export default function Services() {
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Допомога в дорозі</h2>
                 </div>
-              </a>
+              </button>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={carRedemptionImg} alt="Оренда авто з правом викупу" />
                 </div>
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Оренда з правом викупу</h2>
                 </div>
-              </a>
+              </button>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={truckImg} alt="Вантажне авто" />
                 </div>
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Оренда вантажного авто</h2>
                 </div>
-              </a>
+              </button>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -58,10 +58,10 @@ export default function Services() {
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Авто з виїздом за кордон</h2>
                 </div>
-              </a>
+              </button>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button className={css.link}>
                 <div className={css.thumb}>
                   <img
                   className={css.img}
@@ -72,17 +72,17 @@ export default function Services() {
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Добова оренда авто</h2>
                 </div>
-              </a>
+              </button>
             </li>
             <li className={css.item}>
-              <a href="#" className={css.link}>
+              <button className={css.link}>
                 <div className={css.thumb}>
                   <img className={css.img} src={myCarImg} alt='Чоловік за кермом авто'/>
                 </div>
                 <div className={css.content}>
                   <h2 className={css.itemTitle}>Здай своє авто в оренду</h2>
                 </div>
-              </a>
+              </button>
             </li>
           </ul>
     </>
